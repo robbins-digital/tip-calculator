@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robbins Digital - Simple Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="global-container">
+        <div class="header-inner flex-center-center"><img id="header-logo" src="" /></div>
+        <div class="container-inner flex-center-center">
+            <div id="desc-box" class="flex-center-center">
+                <h2 class="white-txt">Welcome to the bill calculator</h2>
+                <p class="white-txt">Please enter the relevant data below:</p>
+            </div>
+            <form class="flex-center-center" id="tip-calculator">
+                <!--Bill Amount-->
+                <p class="primary-color-txt">Bill Amount</p><input type="text" name="bill-amount" id="input-bill"><br>
+                <!--Percentage Amount-->
+                <p class="primary-color-txt">Tip Percentage: <span id="output-percent">15</span>%</p>
+                <div class="slider-container">
+                    <input type="range" min="1" max="50" value="15" class="slider" id="tip-percent-slider">
+                </div>
+                <input class="primary-btn" type="button" value="Calculate Tip & Bill" id="calculate-values">
+                <!--Dollar Tip Amount-->
+                <p class="primary-color-txt">Tip Amount: $<span id="output-tip">--</span></p>
+                <!--Total Bill Amount-->
+                <p class="primary-color-txt">Total Bill Amount: $<span id="output-final-bill">--</span></p>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
